@@ -15,9 +15,9 @@
 # ----
 .idea
 .shelf
-/*.iml
-/*.ipr
-/*.iws
+**.iml
+**.ipr
+**.iws
 
 # Eclipse
 # -------
