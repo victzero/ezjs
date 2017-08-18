@@ -1,9 +1,10 @@
 *.class
 
 # Package Files #
-*/build/*.jar
-*/build/*.war
-*/build/*.ear
+**/build/*
+# **/build/**.jar
+# **/build/**.war
+# **/build/**.ear
 
 # Gradle
 # ------
@@ -17,15 +18,6 @@
 /*.iml
 /*.ipr
 /*.iws
-/buildSrc/*.iml
-/buildSrc/*.ipr
-/buildSrc/*.iws
-/buildSrc/out
-/out
-/subprojects/*/*.iml
-/subprojects/*/out
-/.teamcity/*.iml
-/.teamcity/target
 
 # Eclipse
 # -------
