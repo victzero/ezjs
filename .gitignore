@@ -1,54 +1,85 @@
 *.class
 
 # Package Files #
-*.jar
-*.war
-*.ear
+*/build/*.jar
+*/build/*.war
+*/build/*.ear
 
-**/.idea/workspace.xml
-**/.idea/tasks.xml
+# Gradle
+# ------
+.gradle
+/build
 
-# Created by https://www.gitignore.io
+# IDEA
+# ----
+.idea
+.shelf
+/*.iml
+/*.ipr
+/*.iws
+/buildSrc/*.iml
+/buildSrc/*.ipr
+/buildSrc/*.iws
+/buildSrc/out
+/out
+/subprojects/*/*.iml
+/subprojects/*/out
+/.teamcity/*.iml
+/.teamcity/target
 
-### Intellij ###
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
+# Eclipse
+# -------
+*.classpath
+*.project
+*.settings
+/bin
+/subprojects/*/bin
+atlassian-ide-plugin.xml
 
-*.iml
+# NetBeans
+# --------
+.nb-gradle
+.nb-gradle-properties
 
-**/.gradle/*
-**/gradle/*
-# gradlew*
+# Vim
+# ---
+*.sw[op]
 
-build/*
-**/build/*
+# Emacs
+# -----
+*~
+\#*\#
+.\#*
 
-## Directory-based project format:
-.idea/
-# if you remove the above rule, at least ignore the following:
+# Textmate
+# --------
+.textmate
 
-# User-specific stuff:
-# .idea/workspace.xml
-# .idea/tasks.xml
-# .idea/dictionaries
+# Sublime Text
+# ------------
+*.sublime-*
 
-# Sensitive or high-churn files:
-# .idea/dataSources.ids
-# .idea/dataSources.xml
-# .idea/sqlDataSources.xml
-# .idea/dynamic.xml
-# .idea/uiDesigner.xml
+# jEnv
+# ----
+.java-version
 
-# Gradle:
-# .idea/gradle.xml
-# .idea/libraries
+# OS X
+# ----
+.DS_Store
 
-# Mongo Explorer plugin:
-# .idea/mongoSettings.xml
+# HPROF
+# -----
+*.hprof
 
-## File-based project format:
-*.ipr
-*.iws
-lib/._.DS_Store
-**/*.bak
+# Work dirs
+# ---------
+/incoming-distributions
+/intTestHomeDir
 
-**/*.log
+# Logs
+# ----
+/*.log
+
+# oh-my-zsh gradle plugin
+.gradletasknamecache
+
