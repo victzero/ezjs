@@ -1,2 +1,3 @@
 rootProject.name = 'ezjs-core'
+include 'core'
 
